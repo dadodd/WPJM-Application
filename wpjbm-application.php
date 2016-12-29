@@ -7,7 +7,7 @@
  * Version: 1.0.0
  * License: GPL2
  */
- function custom_shortcode() {
+ function wpjbma_shortcode() {
 global $current_user;
 get_currentuserinfo();    
 
@@ -25,4 +25,4 @@ get_currentuserinfo();
 		
 	endwhile;
 }
-add_shortcode( 'wpjbm_application', 'custom_shortcode' );
+add_shortcode( 'wpjbm_application', 'wpjbma_shortcode' );
